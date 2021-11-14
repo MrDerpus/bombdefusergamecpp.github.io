@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1636558680 source:c:\users\matthew\desktop\numbtochar\main.cpp
+	"HEADERS\includes.hpp"
+
+1636556208 c:\users\matthew\desktop\numbtochar\headers\includes.hpp
+	<windows.h>
+	<iostream>
+	<conio.h>
+	<string>
+	"vars.hpp"
+	"colours.hpp"
+	"functions.hpp"
+
+1636557165 c:\users\matthew\desktop\numbtochar\headers\vars.hpp
+
+1636556208 c:\users\matthew\desktop\numbtochar\headers\colours.hpp
+
+1636558098 c:\users\matthew\desktop\numbtochar\headers\functions.hpp
+

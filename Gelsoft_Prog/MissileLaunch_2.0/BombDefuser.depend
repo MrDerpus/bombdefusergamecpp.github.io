@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1557728378 source:z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\misslelaunch\main.cpp
+	"HEADERS\includes.hpp"
+
+1557726430 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\misslelaunch\headers\includes.hpp
+	<windows.h>
+	<iostream>
+	<fstream>
+	<conio.h>
+	<string>
+	<random>
+	<thread>
+	<chrono>
+	<ctime>
+	"vars.hpp"
+	"functions.hpp"
+
+1557726776 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\misslelaunch\headers\vars.hpp
+
+1557728409 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\misslelaunch\headers\functions.hpp
+
+1636607990 source:z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\main.cpp
+	"HEADERS\includes.hpp"
+
+1628865659 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\headers\includes.hpp
+	<windows.h>
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<conio.h>
+	<string>
+	<random>
+	<thread>
+	<time.h>
+	"vars.hpp"
+	"colours.hpp"
+	"functions.hpp"
+
+1601273534 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\headers\ascii.hpp
+
+1600927217 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\headers\colours.hpp
+
+1636923346 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\headers\vars.hpp
+
+1636885204 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\headers\functions.hpp
+

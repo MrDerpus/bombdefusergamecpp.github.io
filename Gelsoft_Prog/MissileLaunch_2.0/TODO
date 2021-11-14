@@ -1,0 +1,55 @@
+TODO:
+
+
+
+BUGS:
+Commenting out the 'GetDateTime()' function still lets the program run when it checks the license. [FIXED]
+
+
+
+##############
+\bin\debug\
+    - project.exe
+    - node_dep.js
+    - splash_screen.txt
+    - newyears_day.txt
+    - poppyflower.txt
+    - halloween.txt
+    - xmas1.txt
+    - valentines_day.txt
+    - SETTINGS.ini
+    - \snds\
+        - Correct_button_press_50.wav
+        - Wrong_button_press_50.wav
+        - Correct_button_press_100.wav
+        - Wrong_button_press_100.wav
+##############
+
+
+
+Needed on install:
+Node.js (This is for time)
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------
+
+
+It is recomended that you have your device connected to the internet
+for at least one full minute, this is to ensure that your device
+has completely connnected to the internet to avoid any network issues
+while the game is starting up and setting up configurations.
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------
