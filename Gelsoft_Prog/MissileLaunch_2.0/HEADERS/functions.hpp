@@ -20,7 +20,8 @@ void ConsoleBasics() // Save windows width & height + get username and computer 
 	GetComputerName((TCHAR*) c_ComputerName, &UNsize);
 
 	s_COMUS = string(c_ComputerName) + "_" + string(c_UserName);
-	s_COMURL = s_curl + s_COMUS + s_ext;
+	//s_COMURL = s_curl + s_COMUS + s_ext;
+
 }
 
 
@@ -60,24 +61,12 @@ void DisplaySplashscreen()
 
 void loadingAnimation()
 {
+
+	// Pretty messy, but it does the job.
 	int i_MessageCount = 0;
 	ShowConsoleCursor(FALSE);
-	while(s_flowState == "xxx")
+	while(s_flowState == "xxx" && b_loadingAnimation == TRUE)
 	{
-		// | ( | )
-		/*printf(BMAG "|\b");  Sleep(130);
-		printf(BMAG "(\b");  Sleep(130);
-		printf(BMAG "|\b");  Sleep(130);
-		printf(BMAG ")\b");  Sleep(130);*/
-
-		/*printf(BMAG "d\b");  Sleep(130);
-		printf(BMAG "q\b");  Sleep(130);
-		printf(BMAG "b\b");  Sleep(130);
-		printf(BMAG "p\b");  Sleep(130);*/
-
-		/*printf(BMAG "O o O\b\b\b\b\b"); Sleep(130);
-		printf(BMAG "o O o\b\b\b\b\b"); Sleep(130);*/
-
 		for(unsigned i = 0; i < 3; i++)
 		{ printf(BMAG " o"); Sleep(150); }
 
@@ -89,7 +78,7 @@ void loadingAnimation()
 		printf("\b\b\b\b\b\b");
 
 
-		if(i_MessageCount == 20)
+		if(i_MessageCount == 10)
 		{
 			printf(BRED "\n\n\n  I think there might be an error. \n  Either you do not have a license or you have poor internet connection . . . \n");
 			i_MessageCount++;
@@ -97,6 +86,7 @@ void loadingAnimation()
 		}
 		else { i_MessageCount++; }
 	}
+
 	ShowConsoleCursor(TRUE);
 }
 
@@ -125,10 +115,30 @@ void GrabDateTime()
 
 void NumRoll() // Roll random numbers . . .
 {
-	for(unsigned i = 0; i < 5; i++)
-	{ RandInt = diceRoll(randomGen); }
+	for(unsigned i = 0; i < 6; i++)
+	{
+		RandInt = diceRoll(randomGen);
+		SecInt = secAplhabet(randomGen);
+	}
 }
 
+void secFileNameGen()
+{
+	// serial key . . .
+	while(s_randomGenString.length() < 8)
+	{
+		NumRoll();
+		s_randomGenString += c_fullaplabet[SecInt];
+		//Sleep(50);
+	}
+
+	// Debug printf() function . . .
+	//printf("%s\n", s_randomGenString.c_str());
+	s_ranFileName = s_randomGenString + "." + s_randomGenString;
+	s_COMURL = s_curlOne + s_ranFileName + s_curlTwo + s_COMUS + s_ext; // THIS IS THE CURL COMMAND TO GRAB FILE FROM SERVER . . .
+
+	s_randomGenString = s_NULL_Str;
+}
 
 void Num2Char() // Assign numbers to chars . . .
 {
@@ -190,17 +200,18 @@ void ReadKEY()
 	appropriate variables . . . */
 	else
 	{
-		//string lineIgnore;
 		system(s_COMURL.c_str());
-		KEY.open("serialKey.ini");
+		KEY.open(s_ranFileName);
 
-		getline(KEY, s_secretKey); // exp date
+		getline(KEY, s_secretKey);
 		getline(KEY, s_customerName);
 		getline(KEY, s_flowState);
 
 		KEY.close();
 		KEY.clear();
-		system("DEL /Q \"serialKey.ini\"");
+		//system("DEL /Q \"serialKey.ini\"");
+		string delCommandONE = "DEL /Q \""+ s_ranFileName +"\" ";
+		system(delCommandONE.c_str());
 
 		// ----------------------------------------------
 
@@ -216,13 +227,14 @@ void ReadKEY()
 		system("DEL /Q \"timefile.timefile\" ");
 		Replace_Sec();
 
+		b_loadingAnimation = FALSE;
 
 		// if there is no license
 		while(s_secretKey == "xxx") // if there is no license . . .
 		{
 			printf(BRED "\n It seems that you do not have a license . . . ");
 			printf(BRED "\n If you think this is a mistake please restart program while connected to the internet.");
-			printf(BRED "\n If this persists please contact: %s. \n\n", s_contactNumber.c_str());
+			printf(BRED "\n If this persists please contact: %s. \n\n", s_contactEmail.c_str());
 			Sleep(i_stdSleep);
 		}
 
@@ -283,7 +295,9 @@ void GetUserInput() // Get user input . . .
 
 	// Commands . . .
 	if(s_UserInput == ";CLR"){ CLR(); } // Clear console . . .
+	else if(s_UserInput == ";STRING"){ for(int i = 0; i < 30; i++){ Sleep(200); secFileNameGen(); } }  // gen random string : DEBUG
 	else if(s_UserInput == ";SPLASH"){ DisplaySplashscreen(); } // Display splashscreen . . .
+	else if(s_UserInput == ";SETTINGS"){ system("start \"\" \"SETTINGS.ini\" >nul"); } // Open up the settings file in notepad . . .
 	else if(s_UserInput == ";DIE" || s_UserInput == ";EXIT") // Close game . . .
 	{
 		b_Running = FALSE;

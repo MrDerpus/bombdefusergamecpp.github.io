@@ -3,7 +3,10 @@ using namespace std;
 
 int main()
 {
+
+
 	ConsoleBasics();
+	secFileNameGen();
 
 	// 'Jucie up' the random number gen . . .
 	for(unsigned i = 0; i < 5; i++){ Num2Char(); }
@@ -43,7 +46,7 @@ int main()
 			{
 				printf(BRED " It appers that your license has been blocked for violating the terms of service.\n");
 				printf(BRED " If you think this is a mistake please restart program while connected to the internet.\n");
-				printf(BRED " If this persists please contact: %s. \n\n", s_contactNumber.c_str());
+				printf(BRED " If this persists please contact: %s. \n\n", s_contactEmail.c_str());
 				//printf(BRED "%s", s_msg_error.c_str());
 				Sleep(i_stdSleep);
 			}
@@ -68,7 +71,7 @@ int main()
 			while(DATE_COM > i_secretKey) // expired license . . .
 			{
 				printf(BRED " Hey there %s,\n it seems your license has expired. \n", s_customerName.c_str());
-				printf(BRED " If you would like to renew your license, please contact: %s.\n\n", s_contactNumber.c_str());
+				printf(BRED " If you would like to renew your license, please contact: %s.\n\n", s_contactEmail.c_str());
 				Sleep(i_stdSleep);
 			}
 		}
@@ -144,7 +147,9 @@ int main()
 					// Cosmetic only.
 					throwAway++;
 					if(throwAway < 5 && b_Pressed == TRUE){ printf(BWHT " \xb3 "); }
-					if(throwAway > 4 && b_Pressed == TRUE){ i_row += 2; set_cursor(i_row, i_col); throwAway = 0; }
+					if(throwAway > 4 && b_Pressed == TRUE){ i_row += 2;
+						set_cursor(i_row, i_col);
+						throwAway = 0; }
 
 					// Reset vars while playing . . .
 					b_Pressed = FALSE; // Reset value . . .

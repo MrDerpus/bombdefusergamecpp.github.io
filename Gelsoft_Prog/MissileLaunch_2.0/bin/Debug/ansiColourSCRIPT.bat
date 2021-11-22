@@ -6,7 +6,7 @@ GOTO :LOOP
 :LOOP
 
 CLS
-TYPE "poppyflower.txt"
+TYPE "aus_day.txt"
 
 PING LOCALHOST -l 2 >NUL
 

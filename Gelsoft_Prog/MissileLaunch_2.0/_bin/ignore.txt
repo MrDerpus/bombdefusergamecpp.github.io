@@ -15,3 +15,88 @@ Dec
 
 a b c d e f g h i j k l m n o p q r s t u v w x y z | 0 1 2 3 4 5 6 7 8 9
 n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c | d e f g h i j k l m
+
+
+
+
+
+
+// | ( | )
+/*printf(BMAG "|\b");  Sleep(130);
+printf(BMAG "(\b");  Sleep(130);
+printf(BMAG "|\b");  Sleep(130);
+printf(BMAG ")\b");  Sleep(130);*/
+
+/*printf(BMAG "d\b");  Sleep(130);
+printf(BMAG "q\b");  Sleep(130);
+printf(BMAG "b\b");  Sleep(130);
+printf(BMAG "p\b");  Sleep(130);*/
+
+/*printf(BMAG "O o O\b\b\b\b\b"); Sleep(130);
+printf(BMAG "o O o\b\b\b\b\b"); Sleep(130);*/
+
+
+
+
+
+
+
+
+
+General clean up & improvements:
+	- Randomize serialKey.ini name & extension within the program to ensure that
+	  people can't force inject there own 'serialKey.ini' so easily - as right now it is very easy to.
+	  The same can be said for 'timefile.timefile' as well.
+
+	  eg:
+	  'serialKey.ini' would be randomized in the file to 'qXt5_c.r64i0c'
+	  char c_fullaplabet[66] =
+	  {
+	  	'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+		'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+		'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '_', '#', '$', '!'
+	  };
+	  for(int i = 0; i < 6; i++)
+	  {
+	  	randomNumRollFunctionForRndString();
+	  	s_randomGenString += c_fullaplabet[i];
+		Sleep(50);
+	  }
+
+
+
+
+
+
+New Game mode ideas:
+
+	- Wires.
+	  The 2 players are required to defuse the bomb in this case.
+	  One player has is tasked with cutting the wires while the other tells them which ones the cut.
+
+	  There will be 7 set patterns for players the follow through and have to flesh out before cutting the wires.
+
+
+	  eg:
+
+	  RED WIRE ========================
+	  BLU WIRE ========================
+	  YEL WIRE ========================
+	  GRN WIRE ========================
+	  WHT WIRE ========================
+	  BLK WIRE ========================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
