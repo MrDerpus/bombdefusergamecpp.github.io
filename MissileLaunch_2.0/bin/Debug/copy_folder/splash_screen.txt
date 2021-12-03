@@ -1,0 +1,26 @@
+[1;33m      `...-....--....--.....-...`
+[1;33m   ---`                         .---
+[1;33m  /                                 /
+[1;33m  d-                               :d
+[1;33m  hMmy+:.`                   `.:+yNMh
+[1;33m  :MMMMMMMNmdhyssssosssyyhdmNMMMMMMM-
+[1;33m   sMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo
+[1;33m    sMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs
+[1;33m     /NMMMMMMMMMMMMMMMMMMMMMMMMMN/
+[1;33m      `sNMMMMMMMMMMMMMMMMMMMMMNs`
+[1;33m        `+dMMMMMMMMMMMMMMMMMd+`
+[1;33m           .+ymMMMMMMMMMmy+.
+[1;33m               .oNMMMNo.
+[1;33m                 .NMN.
+[1;33m                  NMN
+[1;33m                 `NMN`
+[1;33m                 `MMM.
+[1;33m                 -MMM-
+[1;33m                 :MMM:
+[1;33m               `.+MMMo-.`
+[1;33m        `:+ydNMMMMMMMMMMMNmhs+.
+[1;33m      /hMMMMMMMMMMMMMMMMMMMMMMMmo
+[1;33m     yMMMMMMMMMMMMMMMMMMMMMMMMMMMs
+[1;33m     yMMMMMMMMMMMMMMMMMMMMMMMMMMN:
+[1;33m      /hNMMMMMMMMMMMMMMMMMMMMNh+`
+[1;33m         -+sydmNMMMMMNNmhyo/-        [1;37m

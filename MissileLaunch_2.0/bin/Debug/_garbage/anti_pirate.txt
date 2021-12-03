@@ -1,0 +1,172 @@
+/=======================================\
+| ? : ? | ? : ? | ? : ? | ? : ? | ? : ? |
+|---------------------------------------|
+| ? : ? | ? : ? | ? : ? | ? : ? | ? : ? |
+|---------------------------------------|
+| ? : ? | ? : ? | ? : ? | ? : ? | ? : ? |
+|---------------------------------------|
+| ? : ? | ? : ? | ? : ? | ? : ? | ? : ? |
+\=======================================/
+
+
+
+
+
+
+
+
+
+ ┐
+┌┼┘
+ └
+
+
+
+
+
+\xB3 = │
+\xB4 = ┤
+\xBF = ┐
+\xC0 = └
+\xC1 = ┴
+\xC2 = ┬
+\xC3 = ├
+\xC4 = ─
+\xC5 = ┼
+\xD9 = ┘
+\xDA = ┌
+
+
+┌───────┬───────┬───────┬───────┬───────┐
+│ ? : ? │ ? : ? │ ? : ? │ ? : ? │ ? : ? │
+├───────┼───────┼───────┼───────┼───────┤
+│ ? : ? │ ? : ? │ ? : ? │ ? : ? │ ? : ? │
+├───────┼───────┼───────┼───────┼───────┤
+│ ? : ? │ ? : ? │ ? : ? │ ? : ? │ ? : ? │
+├───────┼───────┼───────┼───────┼───────┤
+│ ? : ? │ ? : ? │ ? : ? │ ? : ? │ ? : ? │
+└───────┴───────┴───────┴───────┴───────┘
+
+
+TOP
+"\xDA\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC2\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC2\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC2\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC2\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xBF \n"
+
+CELLS
+"\xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 \n"
+
+LINESPACE BORDER
+"\xC3\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xB4 \n"
+
+BOTTOM
+"\xC0\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC1\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC1\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC1\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC1\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xD9 \n"
+
+
+
+
+
+
+
+TOP
+printf("\xDA"); for(int i=0; i<39; i++){ printf("\xC4"); } printf("\xBF\n");
+
+CELL
+for(int i=0; i<5; i++){ printf("\xB3 ? : ? "); }
+
+BOTTOM
+printf("\xC0"); for(int i=0; i<39; i++){ printf("\xC4"); } printf("\xD9\n");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// BORDER TEST
+//linespace
+//top
+printf("\xDA\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC2\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC2\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC2\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC2\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xBF \n");
+printf("\xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 \n");
+//linespace
+printf("\xC3\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xB4 \n");
+printf("\xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 \n");
+//linespace
+printf("\xC3\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xB4 \n");
+printf("\xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 \n");
+//linespace
+printf("\xC3\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC5\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xB4 \n");
+printf("\xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 ? : ? \xB3 \n");
+//bottom
+printf("\xC0\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC1\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC1\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC1\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC1\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xD9 \n");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+anti piracy measure . . .
+Program downloads file from host server and validates it from within the program.
+
+If the program detects the license is expired, or it is not connected to the internet upon start up,
+the program will throw the appropriate error message to the user.
+
+The file will be validated by using the Username and Computer name variables that is attached to the windows OS,
+checking with the file server if there is file with the same username and computer name with the needed CDTM code
+within the file.

@@ -1,0 +1,4 @@
+
+ Thank you for installing BombDefuser v1.
+ 
+ This program will install in your documents folder . . .

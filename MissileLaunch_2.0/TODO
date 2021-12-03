@@ -1,0 +1,73 @@
+TODO:
+Add Game winning sound. ---------------------------------------- []
+Add Game losing  sound. ---------------------------------------- []
+Clean up code, make it nice and clean. ------------------------- []
+
+
+BUGS:
+Commenting out the 'GetDateTime()' function still lets the program run when it checks the license. [FIXED]
+
+Allow file name to be downloaded as random gen letter, numbers and symbols to make the program more secure. [FIXED]
+
+
+
+##############
+\bin\debug\
+    - project.exe
+    - node_dep.js
+    - splash_screen.txt
+    - newyears_day.txt
+    - poppyflower.txt
+    - halloween.txt
+    - xmas1.txt
+    - valentines_day.txt
+    - SETTINGS.ini
+    - \snds\
+        - Correct_button_press_50.wav
+        - Correct_button_press_100.wav
+        - Wrong_button_press_50.wav
+        - Wrong_button_press_100.wav
+##############
+
+
+
+Needed to be installed to play:
+Node.js v13.14.0 (This is to get the expiry date from the internet)
+
+
+comes with game:
+cURL
+ansicon
+
+
+
+
+
+
+
+
+
+THE GAME CAN NOW RUN ON WINDOWS 7 AS WELL AS WINDOWS 10!!!!!!!
+ansicon saved my arse - I just need to find a way to make it run on it's own
+
+
+
+
+
+
+-----------------------------------------------------------------------------------
+
+
+It is recommended that you have your device connected to the internet
+for at least one full minute, this is to ensure that your device
+has completely connected to the internet to avoid any network issues
+while the game is starting up and setting up configurations.
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------

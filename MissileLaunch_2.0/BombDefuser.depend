@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1557728378 source:z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\misslelaunch\main.cpp
+	"HEADERS\includes.hpp"
+
+1557726430 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\misslelaunch\headers\includes.hpp
+	<windows.h>
+	<iostream>
+	<fstream>
+	<conio.h>
+	<string>
+	<random>
+	<thread>
+	<chrono>
+	<ctime>
+	"vars.hpp"
+	"functions.hpp"
+
+1557726776 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\misslelaunch\headers\vars.hpp
+
+1557728409 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\misslelaunch\headers\functions.hpp
+
+1637831479 source:z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\main.cpp
+	"HEADERS\includes.hpp"
+
+1637797059 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\headers\includes.hpp
+	<windows.h>
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<conio.h>
+	<string>
+	<random>
+	<thread>
+	<time.h>
+	"vars.hpp"
+	"colours.hpp"
+	"consoleBasics.hpp"
+	"file.hpp"
+	"gameSystem.hpp"
+	"gameModes.hpp"
+	"functions.hpp"
+
+1601273534 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\headers\ascii.hpp
+
+1600927217 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\headers\colours.hpp
+
+1638531225 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\headers\vars.hpp
+
+1637796396 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\headers\functions.hpp
+
+1637387665 source:z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\bin\debug\resources.rc
+
+1637795137 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\headers\file.hpp
+
+1638530981 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\headers\consolebasics.hpp
+
+1637797927 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\headers\gamemodes.hpp
+
+1637796518 z:\stuffs\projects\programming\c++\c++_games\gelsoft_prog\missilelaunch_2.0\headers\gamesystem.hpp
+

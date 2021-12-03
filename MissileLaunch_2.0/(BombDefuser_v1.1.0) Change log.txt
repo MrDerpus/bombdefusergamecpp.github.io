@@ -1,0 +1,23 @@
+Bomb Defuser (v1.1.0)
+	- Beefed up security features to help keep the user profile more secure.
+	- Made it more easy for Win7 users to install and play.
+	- Performance optimisations.
+	- .
+	- .
+	- .
+
+
+win7 needs:
+node.js - v13.14.0    | download from website my website.
+Ansicon - any version | comes with game in game files.
+curl    - v70.80.0    | comes with game in game files.
+
+
+
+
+
+bugs:
+Without having NUMLOCK turned on, sometimes hitting the wrong key will
+accept the players input as if the player had press the correct key.
+
+Why this happens, I have no idea.
